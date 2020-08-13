@@ -36,6 +36,7 @@ Starting NFS daemon: [ OK ]
 [root@openswan ~]# mkdir -p /nfs_client
 
 [root@openswan ~]# mount -t nfs 10.0.0.3:/nfs /nfs_client/
+
 [root@openswan ~]# df -h
 Filesystem Size Used Avail Use% Mounted on
 devtmpfs 458M 0 458M 0% /dev
@@ -47,6 +48,7 @@ tmpfs 486M 0 486M 0% /sys/fs/cgroup
 tmpfs 98M 0 98M 0% /run/user/0
 tmpfs 98M 0 98M 0% /run/user/1000
 10.0.0.3:/nfs 38G 2.0G 34G 6% /nfs_client
+
 [root@openswan ~]# cd /nfs_client/
 [root@openswan nfs_client]# ls
 aws-oci-vpn.txt oci-oel.txt
