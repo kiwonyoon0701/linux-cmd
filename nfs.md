@@ -1,4 +1,8 @@
-**NFS Server**
+# Create NFS Server and Client
+
+## Create NFS Server and Create NFS share
+
+```
 [root@openswan-oel6 ~]# cd /nfs
 [root@openswan-oel6 nfs]# vi a.txt
 [root@openswan-oel6 nfs]# vi oci-oel.txt
@@ -23,8 +27,11 @@ Starting NFS mountd: [ OK ]
 Starting NFS daemon: [ OK ]
 
 [root@openswan-oel6 ~]#
+```
 
-**NFS Client**
+## Create NFS Client and mount
+
+```
 [root@openswan ~]# yum install nfs-utils
 [root@openswan ~]# mkdir -p /nfs_client
 
@@ -43,3 +50,4 @@ tmpfs 98M 0 98M 0% /run/user/1000
 [root@openswan ~]# cd /nfs_client/
 [root@openswan nfs_client]# ls
 aws-oci-vpn.txt oci-oel.txt
+```
